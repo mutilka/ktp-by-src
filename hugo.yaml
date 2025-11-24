@@ -72,9 +72,9 @@ languages:
     params:
       languageAltTitle: Русский
       profileMode:
-        enabled: true
+        enabled: false
         title: "Производит:"
-        #imageUrl: "mke-logo-wrw-o.svg"       # логотип для светлой темы
+        imageUrl: "mke-logo-wrw-o.svg"       # логотип для светлой темы
         imageTitle: Логотип ООО «МонолитКомфорт Энерго»
         subtitle: "☄️ НКУ | ☁️ КСО | 🌙 КРУ | 📱 КТП"
         buttons:

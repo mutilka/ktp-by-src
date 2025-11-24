@@ -114,35 +114,36 @@ kbd {
     margin: 0 auto;
 }
 
-/* Стиль для изображения заглавной страницы */
-/* Базовый стиль для логотипа (fallback для светлой темы) */
-.profile_inner img {
-  /* content: url("/mke-logo-brw-o.svg");*/  /* тёмный логотип для светлой темы */
+/* Стиль для логотипа на главной странице */
+.theme-logo img {
   border-radius: unset !important;
   width: auto !important;
-  height: 150px !important;             /* фиксируем, чтобы не прыгало */
+  height: 150px !important;
   margin: 50px 0 100px 0;
+  
+  /* Fallback — логотип для светлой темы */
+  content: url("/mke-logo-brw-o.svg");
 }
 
-/* Когда тёмная тема (data-theme на html) */
-html[data-theme="dark"] .profile_inner img {
-  content: url("/mke-logo-wrw-o.svg") !important;  /* светлый логотип для тёмной темы */
+/* Явно выбранная тёмная тема */
+html[data-theme="dark"] .theme-logo img {
+  content: url("/mke-logo-wrw-o.svg") !important;
 }
 
-/* Когда светлая тема */
-html[data-theme="light"] .profile_inner img {
+/* Явно выбранная светлая тема */
+html[data-theme="light"] .theme-logo img {
   content: url("/mke-logo-brw-o.svg") !important;
 }
 
-/* Для системной темы ОС (если на сайте режим "auto" без ручного переключателя) */
+/* Автоматический режим (auto) — следуем системной теме */
 @media (prefers-color-scheme: dark) {
-  .profile_inner img {
+  html:not([data-theme="light"]) .theme-logo img {
     content: url("/mke-logo-wrw-o.svg") !important;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .profile_inner img {
+  html:not([data-theme="dark"]) .theme-logo img {
     content: url("/mke-logo-brw-o.svg") !important;
   }
 }
