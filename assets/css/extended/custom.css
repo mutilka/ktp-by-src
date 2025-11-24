@@ -1,0 +1,157 @@
+/* Шрифт сайта fira code */
+
+body {
+    font-family: fira code, Monaco, Consolas, ubuntu mono, verdana, monospace;
+}
+
+/* Перенос строк меню */
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Высота меню */
+
+:root {
+    --header-height: 45px;
+}
+
+/* Базовые стили спойлера */
+
+.spoiler {
+    border: 1px solid var(--border, #e1e4e8);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.highlight {
+    margin: 0 !important;
+    border-radius: 0 0 var(--radius) var(--radius) !important;
+}
+
+.spoiler summary {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    color: var(--primary, #24292e);
+    background: var(--code-bg, #f6f8fa);
+    border-radius: var(--radius) var(--radius) 0 0;
+    list-style: none;
+    transition: background 0.2s ease;
+    position: relative; /* Для позиционирования стрелки */
+    display: flex;
+    justify-content: space-between; /* Размещает текст слева, стрелку справа */
+    align-items: center;
+}
+
+.spoiler summary::-webkit-details-marker {
+    display: none; /* Убирает стандартную стрелку в WebKit */
+}
+
+.spoiler summary:hover {
+    background: var(--entry, #e1e4e8);
+}
+
+/* Стрелка */
+.spoiler summary::after {
+    content: '\25BC'; /* Unicode для стрелки вниз (▼) */
+    font-size: 0.8rem;
+    color: var(--primary, #24292e);
+    transition: transform 0.2s ease;
+}
+
+/* Поворот стрелки при открытии спойлера */
+.spoiler[open] summary::after {
+    transform: rotate(180deg); /* Стрелка вверх при открытии */
+}
+
+.spoiler-content {
+    padding: 1rem;
+    background: var(--background, #fff);
+    border-top: 1px solid var(--border, #e1e4e8);
+}
+
+/* Оформление кнопок клавиатуры */
+
+kbd {
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.1em 0.6em;
+
+    font-family: system-ui, sans-serif;
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: #3b3b3b;
+    text-shadow: 0 1px 0 #fff;
+
+    background-color: #e0e0e0;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 0 #fff;
+
+    white-space: nowrap;
+}
+
+/* Реальный размер entry-cover (обложка) */
+
+.entry-cover img {
+    border-radius: var(--radius);
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+/* Выравнивание картинок по центру статьи */
+
+.post-content img {
+    border-radius: 4px;
+    /* margin: 1rem 0; */
+    margin: 0 auto;
+}
+
+/* Стиль для изображения заглавной страницы */
+/* Базовый стиль для логотипа (fallback для светлой темы) */
+.profile_inner img {
+  /* content: url("/mke-logo-brw-o.svg");*/  /* тёмный логотип для светлой темы */
+  border-radius: unset !important;
+  width: auto !important;
+  height: 150px !important;             /* фиксируем, чтобы не прыгало */
+  margin: 50px 0 100px 0;
+}
+
+/* Когда тёмная тема (data-theme на html) */
+html[data-theme="dark"] .profile_inner img {
+  content: url("/mke-logo-wrw-o.svg") !important;  /* светлый логотип для тёмной темы */
+}
+
+/* Когда светлая тема */
+html[data-theme="light"] .profile_inner img {
+  content: url("/mke-logo-brw-o.svg") !important;
+}
+
+/* Для системной темы ОС (если на сайте режим "auto" без ручного переключателя) */
+@media (prefers-color-scheme: dark) {
+  .profile_inner img {
+    content: url("/mke-logo-wrw-o.svg") !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .profile_inner img {
+    content: url("/mke-logo-brw-o.svg") !important;
+  }
+}
+
+/* немного правим навигацию */
+.nav {
+    max-width: none;
+}
+
+.lang-switch li, .lang-switch ul, .logo-switches {
+    padding-left: 10px;
+}

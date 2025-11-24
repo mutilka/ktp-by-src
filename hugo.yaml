@@ -1,0 +1,222 @@
+baseURL: https://ktp.by/
+languageCode: ru-ru
+defaultContentLanguage: ru
+defaultContentLanguageInSubdir: false
+title: ООО «МонолитКомфорт Энерго»
+copyright: "© [ООО «МонолитКомфорт Энерго» 2025]()"
+theme: ["PaperMod"]
+publishDir: ../ktp-by-prod/public
+
+permalinks:
+  NKU: /nku/:slug/
+  KSO: /kso/:slug/
+  KRU: /kru/:slug/
+  KTP: /ktp/:slug/
+  blog: /blog/:slug/
+  about: /about/:slug/
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["nku", "kso", "kru", "ktp", "blog", "about"]
+
+minify:
+  disableXML: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 10
+
+languages:
+  ru:
+    contentDir: content/ru
+    languageName: "Русский"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: НКУ
+          url: nku
+          weight: 5  
+        - name: КСО
+          url: kso
+          weight: 10
+        - name: КРУ
+          url: kru
+          weight: 15
+        - name: КТП
+          url: ktp
+          weight: 20  
+        - name: Блог
+          url: blog
+          weight: 25
+        - name: О нас
+          url: about
+          weight: 30
+        - name: Архив
+          url: archives
+          weight: 35
+        - name: Поиск
+          url: search/
+          weight: 40
+        - name: Теги
+          url: tags/
+          weight: 45
+    params:
+      languageAltTitle: Русский
+      profileMode:
+        enabled: true
+        title: "Производит:"
+        #imageUrl: "mke-logo-wrw-o.svg"       # логотип для светлой темы
+        imageTitle: Логотип ООО «МонолитКомфорт Энерго»
+        subtitle: "☄️ НКУ | ☁️ КСО | 🌙 КРУ | 📱 КТП"
+        buttons:
+          - name: Блог
+            url: blog
+          - name: GitHub
+            url: https://github.com/mutilka/pyatok-net-src
+      fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.3
+        minMatchCharLength: 2
+        keys: ["title", "summary", "content"]
+
+  en:
+    languageName: "English"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: CAD's
+          url: cad
+          weight: 5  
+        - name: Posts
+          url: posts
+          weight: 5  
+        - name: Tools
+          url: tools
+          weight: 5
+        - name: Energy
+          url: energy
+          weight: 5
+        - name: Archive
+          url: archives
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 15
+        - name: Tags
+          url: tags/
+          weight: 20
+        - name: WiKi
+          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+    params:
+      languageAltTitle: English
+      profileMode:
+        enabled: true
+        title: PaperMod
+        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+        imageTitle: Profile Mode Image
+        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        buttons:
+          - name: Blog
+            url: posts
+          - name: Profile Mode
+            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+      fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.3
+        minMatchCharLength: 2
+        keys: ["title", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "Тема PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: Theme PaperMod
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  images: ["images/papermod-cover.png"]
+  assets:
+    disableFingerprinting: true
+    disableHLJS: true
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    buttons:
+      - name: Архив
+        url: archives
+      - name: Теги
+        url: tags
+  homeInfoParams:
+    Title: "Демо PaperMod"
+    Content: >
+      👋 Добро пожаловать на демо-страницу темы Hugo PaperMod!
+
+      - **PaperMod** — это чистая, простая, быстрая и адаптивная тема с полезными функциями, улучшающими пользовательский опыт.
+
+      - Поддержите нас, поставив звезду 🌟 на GitHub и поделившись с друзьями в социальных сетях.
+
+      - PaperMod основана на теме [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+  socialIcons:
+    - name: github
+      title: Посмотреть исходный код на GitHub
+      url: "https://github.com/adityatelange/hugo-PaperMod"
+    - name: Discord
+      title: Присоединиться к сообществу в Discord
+      url: "https://discord.gg/ahpmTvhVmp"
+    - name: X
+      title: Поделиться PaperMod в X/Twitter
+      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+    - name: KoFi
+      title: Купить мне Ko-Fi :)
+      url: "https://ko-fi.com/adityatelange"
+  editPost:
+    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    Text: "Предложить изменения"
+    appendFilePath: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
