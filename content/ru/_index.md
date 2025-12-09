@@ -52,4 +52,7 @@ editPost:
 
 ![Шина медная стимпанк](img/shina-mednaya-stimpank-temnaya.png)
 
-Привет, Кирилл!
+Привет, Кирилл!!
+
+
+CHEM.25.7.247.001 - Швеллер
