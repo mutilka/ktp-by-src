@@ -8,7 +8,7 @@ theme: ["PaperMod"]
 publishDir: ../ktp-by-prod/public
 
 permalinks:
-  NKU: /nku/:slug/
+  NKU: /:sections/:slug/
   KSO: /kso/:slug/
   KRU: /kru/:slug/
   KTP: /ktp/:slug/
