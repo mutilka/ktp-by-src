@@ -152,6 +152,7 @@ outputs:
     - JSON
 
 params:
+  social: true
   env: production
   description: "Тема PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   author: Theme PaperMod
@@ -200,9 +201,9 @@ params:
     - name: X
       title: Поделиться PaperMod в X/Twitter
       url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
-    - name: KoFi
-      title: Купить мне Ko-Fi :)
-      url: "https://ko-fi.com/adityatelange"
+#    - name: KoFi
+#      title: Купить мне Ko-Fi :)
+#      url: "https://ko-fi.com/adityatelange"
   editPost:
     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
     Text: "Предложить изменения"
