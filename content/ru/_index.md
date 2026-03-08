@@ -50,6 +50,6 @@ editPost:
 </div>
 
 
-![Шина медная стимпанк](img/shina-mednaya-stimpank-temnaya.png)
+![Шина медная стимпанк](img/shina-mednaya.jpg)
 
 Привет, Кирилл!!
