@@ -29,7 +29,7 @@ minify:
 
 pagination:
   disableAliases: false
-  pagerSize: 10
+  pagerSize: 5
 
 languages:
   ru:
@@ -81,7 +81,7 @@ languages:
           - name: Блог
             url: blog
           - name: GitHub
-            url: https://github.com/mutilka/pyatok-net-src
+            url: https://github.com/mutilka/ktp-by-src
       fuseOpts:
         isCaseSensitive: false
         shouldSort: true
@@ -182,15 +182,61 @@ params:
       - name: Теги
         url: tags
   homeInfoParams:
-    Title: "Демо PaperMod"
+    Title: "Вас приветствует компания"
     Content: >
-      👋 Добро пожаловать на демо-страницу темы Hugo PaperMod!
+      <div class="theme-logo">
+        <img src="/mke-logo-brw-o.svg" alt="Логотип ООО «МонолитКомфорт Энерго»">
+      </div>
 
-      - **PaperMod** — это чистая, простая, быстрая и адаптивная тема с полезными функциями, улучшающими пользовательский опыт.
+      <div class="custom-hero">
+        <div class="hero-text">
+          <p style="font-weight: 500; font-size: 1.1rem;">
+            🏭 Входящая в группу компаний <strong>ООО «МонолитКомфорт Энерго»</strong> предлагает услуги по проектированию, конструкторской разработке, монтажу, пусконаладочным работам и постгарантийному обслуживанию оборудования для энергетической отрасли:
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="/shina-mednaya.jpg" alt="Медная шина">
+        </div>
+      </div>
 
-      - Поддержите нас, поставив звезду 🌟 на GitHub и поделившись с друзьями в социальных сетях.
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="badge-icon">⚡</div>
+          <div class="product-title">НКУ «МКЭ»</div>
+          <div class="product-desc">Устройства комплектные низковольтные распределения и управления напряжением до 1000 В, стационарного и выдвижного исполнения.</div>
+        </div>
+        <div class="product-card">
+          <div class="badge-icon">🏭</div>
+          <div class="product-title">КТП «МКЭ»</div>
+          <div class="product-desc">Подстанции комплектные трансформаторные мощностью 63–16000 кВА, напряжением на стороне ВН 6–35 кВ в оболочке из бетона, металла и сэндвич-панелей.</div>
+        </div>
+        <div class="product-card">
+          <div class="badge-icon">🔌</div>
+          <div class="product-title">КСО «МКЭ»</div>
+          <div class="product-desc">Камеры сборные одностороннего обслуживания напряжением 6(10) кВ с автогазовой изоляцией и коммутационной аппаратурой с элегазовой изоляцией.</div>
+        </div>
+        <div class="product-card">
+          <div class="badge-icon">📡</div>
+          <div class="product-title">КРУ «МКЭ»</div>
+          <div class="product-desc">Комплектные распределительные устройства высокотехнологичного исполнения, разработанные с учётом пожеланий монтажных и эксплуатирующих организаций.</div>
+        </div>
+        <div class="product-card">
+          <div class="badge-icon">🧠</div>
+          <div class="product-title">КРУ с твёрдой изоляцией</div>
+          <div class="product-desc">Вариант изготовления КРУ «МКЭ» с твёрдой изоляцией обеспечивает возможность изготовления необслуживаемых моноблоков для сетей Smart Grid.</div>
+        </div>
+        <div class="product-card">
+          <div class="badge-icon">🤝</div>
+          <div class="product-title">Прямые поставки</div>
+          <div class="product-desc">Прямые поставки оборудования и комплектующих ведущих заводов-изготовителей. Проверенные, надёжные решения, обеспечивающие высокий экономический эффект.</div>
+        </div>
+      </div>
 
-      - PaperMod основана на теме [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+      <div class="highlight-block">
+        <p><strong>⚙️ Инжиниринговое преимущество</strong> — каждый проект сопровождается детальной проработкой, использованием сертифицированных компонентов и строгим контролем качества. Обеспечиваем снижение эксплуатационных затрат и полную интеграцию с цифровыми системами мониторинга.</p>
+        <p style="margin-top: 0.8rem;">🔹 Гарантийное и постгарантийное обслуживание, шеф-монтаж, пусконаладка — комплексный подход под ключ для объектов от 0,4 до 35 кВ.</p>
+      </div>       
+        
   socialIcons:
     - name: github
       title: Посмотреть исходный код на GitHub
@@ -201,6 +247,9 @@ params:
     - name: X
       title: Поделиться PaperMod в X/Twitter
       url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+    - name: LinkedIn
+      title: Присоединяйтесь к нам в LinkedIn
+      url: "https://#"
 #    - name: KoFi
 #      title: Купить мне Ko-Fi :)
 #      url: "https://ko-fi.com/adityatelange"

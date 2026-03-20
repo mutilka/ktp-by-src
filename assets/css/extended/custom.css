@@ -171,3 +171,111 @@ html[data-theme="light"] .theme-logo img {
 .lang-switch li, .lang-switch ul, .logo-switches {
     padding-left: 10px;
 }
+
+/* =========================================
+   Кастомные стили для главной страницы
+   (PaperMod, совместимость со светлой/тёмной темой)
+   ========================================= */
+
+/* Расширение ширины контента до 90% с ограничением */
+body .main {
+    max-width: 1400px;   /* чтобы на широких экранах строка не была слишком длинной */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    body .main {
+        width: 92%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Блок с логотипом */
+.home-info .theme-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.home-info .theme-logo img {
+    max-width: 220px;
+    height: auto;
+}
+
+/* Гибкий контейнер для текста и картинки */
+.home-info .custom-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.home-info .hero-text {
+    flex: 1.4;
+}
+.home-info .hero-image {
+    flex: 0.8;
+    text-align: center;
+}
+.home-info .hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Сетка продуктов */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 2rem;
+}
+.product-card {
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid var(--border);
+}
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+.product-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--primary);
+}
+.product-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--secondary);
+}
+.badge-icon {
+    font-size: 1.8rem;
+}
+
+/* Выделенный блок */
+.highlight-block {
+    background: var(--entry);
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0 1rem;
+    border-radius: var(--radius);
+}
+
+/* Адаптивность */
+@media (max-width: 720px) {
+    .home-info .custom-hero {
+        flex-direction: column;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
