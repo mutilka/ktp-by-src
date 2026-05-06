@@ -260,19 +260,26 @@ body .main {
     }
 }
 
-/* По умолчанию (светлая тема) показываем чёрный логотип, скрываем белый */
+
+
+
+/* Логотип — светлая тема (по умолчанию) */
+.logo-dark {
+    display: block;
+}
 .logo-light {
     display: none;
 }
 
-/* В тёмной теме скрываем чёрный, показываем белый */
-body.dark .logo-dark {
+/* Логотип — тёмная тема (новая логика PaperMod) */
+html[data-theme="dark"] .logo-dark {
     display: none;
 }
-
-body.dark .logo-light {
+html[data-theme="dark"] .logo-light {
     display: block;
 }
+
+
 
 .social-icons {
     display: flex;
