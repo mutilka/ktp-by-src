@@ -201,28 +201,41 @@ params:
       </div>
 
       <div class="products-grid">
-        
+
+        <a href="/kru/">        
         <div class="product-card">
-          <div class="badge-icon">📡</div>
+          <div class="products-img">
+          </div>
           <div class="product-title">КРУ «МКЭ»</div>
           <div class="product-desc">Комплектные распределительные устройства высокотехнологичного исполнения, разработанные с учётом пожеланий монтажных и эксплуатирующих организаций.</div>
         </div>
+        </a>
         
+        <a href="/kso/">
         <div class="product-card">
-          <div class="badge-icon">🔌</div>
+           <div class="products-img">
+           <img src="/kso/kso_mke_075.png" alt="КСО «МКЭ» схема 75">
+           <img src="/kso/kso_mke_101.png" alt="КСО «МКЭ» схема 101">
+           <img src="/kso/kso_mke_201.png" alt="КСО «МКЭ» схема 201">
+           </div>
           <div class="product-title">КСО «МКЭ»</div>
           <div class="product-desc">Камеры сборные одностороннего обслуживания напряжением 6(10) кВ с автогазовой изоляцией и коммутационной аппаратурой с элегазовой изоляцией.</div>
         </div>
+        </a>
         
-        <div class="product-card">
-          <div class="badge-icon">🏭</div>
+        <a href="/ktp/">
+          <div class="product-card">
+          <div class="products-img">
+          </div>
           <div class="product-title">КТП «МКЭ»</div>
           <div class="product-desc">Подстанции комплектные трансформаторные мощностью 63–16000 кВА, напряжением на стороне ВН 6–35 кВ в оболочке из бетона, металла и сэндвич-панелей.</div>
-        </div>
-        <a href="/nku/">
+          </div>
+        </a>
         
-        <div class="product-card">
-          <div class="badge-icon">⚡</div>
+        <a href="/nku/">
+          <div class="product-card">
+          <div class="products-img">
+          </div>
           <div class="product-title">НКУ «МКЭ»</div>
           <div class="product-desc">Устройства комплектные низковольтные распределения и управления напряжением до 1000 В, стационарного и выдвижного исполнения.</div>
           </div>
@@ -242,6 +255,10 @@ params:
       
         <div class="product-card">
           <div class="badge-icon">🤝</div>
+          <div class="badge-icon">🔌</div>
+          <div class="badge-icon">⚡</div>
+          <div class="badge-icon">📡</div>
+          <div class="badge-icon">🏭</div>
           <div class="product-title">Наладка</div>
           <div class="product-desc">ЭФИ и ПНР любой сложности, в том числе терминалов релейной защиты и систем БАВР.</div>
         </div>

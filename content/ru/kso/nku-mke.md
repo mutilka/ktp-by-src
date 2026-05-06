@@ -44,15 +44,4 @@ editPost:
 
 ![Общий вид шкафа ввода](../img/СНЕМ-25-7-003-001-Каркас.PNG)
 
-## 3D вид (можно вращать)
-
-<div style="max-width: 1083px; max-height: 845px;">
-  <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 78.024%; overflow: hidden;">
-    <iframe src="/nku/vvod-600-600-2200-mke.5/vvod-600-600-2200-mke.5.html"
-                 allowfullscreen
-                 style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
-                 frameborder="0"
-                 scrolling="no">
-    </iframe>
-  </div>
-</div>
+Описание
