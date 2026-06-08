@@ -1,0 +1,319 @@
+baseURL: https://ktp.by/
+languageCode: ru-ru
+defaultContentLanguage: ru
+defaultContentLanguageInSubdir: false
+title: ООО «МКЭ» – Главная
+copyright: "© [ООО «МонолитКомфорт Энерго»](https://ktp.by/)"
+theme: ["PaperMod"]
+publishDir: ../ktp-by-prod/public
+
+permalinks:
+  KRU: /:sections/:slug/
+  KSO: /:sections/:slug/
+  KTP: /:sections/:slug/
+  NKU: /:sections/:slug/
+#  blog: /blog/:slug/
+  about: /about/:slug/
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["kru", "kso", "ktp", "nku", "about"]
+
+minify:
+  disableXML: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+languages:
+  ru:
+    contentDir: content/ru
+    languageName: "Русский"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: КРУ
+          url: kru
+          weight: 10
+        - name: КСО
+          url: kso
+          weight: 20
+        - name: КТП
+          url: ktp
+          weight: 30  
+        - name: НКУ
+          url: nku
+          weight: 40  
+#        - name: Блог
+#          url: blog
+#          weight: 25
+        - name: О нас
+          url: about
+          weight: 50
+        - name: Поиск
+          url: search/
+          weight: 60
+        - name: Теги
+          url: tags/
+          weight: 70
+        - name: Архив
+          url: archives
+          weight: 80
+    params:
+      languageAltTitle: Русский
+      profileMode:
+        enabled: false
+        title: "Производит:"
+        imageUrl: "mke-logo-wrw-o.svg"       # логотип для светлой темы
+        imageTitle: Логотип ООО «МонолитКомфорт Энерго»
+        subtitle: "☄️ НКУ | ☁️ КСО | 🌙 КРУ | 📱 КТП"
+        buttons:
+          - name: Блог
+            url: blog
+          - name: GitHub
+            url: https://github.com/mutilka/ktp-by-src
+      fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.3
+        minMatchCharLength: 2
+        keys: ["title", "summary", "content"]
+
+  en:
+    languageName: "English"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: CAD's
+          url: cad
+          weight: 5  
+        - name: Posts
+          url: posts
+          weight: 5  
+        - name: Tools
+          url: tools
+          weight: 5
+        - name: Energy
+          url: energy
+          weight: 5
+        - name: Archive
+          url: archives
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 15
+        - name: Tags
+          url: tags/
+          weight: 20
+        - name: WiKi
+          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+    params:
+      languageAltTitle: English
+      profileMode:
+        enabled: true
+        title: PaperMod
+        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+        imageTitle: Profile Mode Image
+        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        buttons:
+          - name: Blog
+            url: posts
+          - name: Profile Mode
+            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+      fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.3
+        minMatchCharLength: 2
+        keys: ["title", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  social: true
+  env: production
+  description: "Тема PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: Theme PaperMod
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  images: ["images/papermod-cover.png"]
+  assets:
+    disableFingerprinting: true
+    disableHLJS: true
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    buttons:
+      - name: Архив
+        url: archives
+      - name: Теги
+        url: tags
+  homeInfoParams:
+    Title: "Вас приветствует наша компания:"
+    Content: >
+      <div class="theme-logo">
+        <img class="logo-dark" src="/mke-logo-brw-o.svg" alt="Логотип (чёрный)">
+        <img class="logo-light" src="/mke-logo-wrw-o.svg" alt="Логотип (белый)">
+      </div>
+
+      <div class="custom-hero">
+        <div class="hero-text">
+          <p style="font-weight: 500; font-size: 1.1rem;">
+            🏭 Входящая в группу компаний <strong>ООО «МонолитКомфорт Энерго»</strong> предлагает услуги по проектированию, конструкторской разработке, монтажу, пусконаладочным работам и постгарантийному обслуживанию оборудования для энергетической отрасли:
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="/shina-mednaya.jpg" alt="Медная шина">
+        </div>
+      </div>
+
+      <div class="products-grid">
+
+        <a href="/kru/">        
+        <div class="product-card">
+          <div class="products-img">
+          </div>
+          <div class="product-title">КРУ «МКЭ»</div>
+          <div class="product-desc">Комплектные распределительные устройства высокотехнологичного исполнения, разработанные с учётом пожеланий монтажных и эксплуатирующих организаций.</div>
+        </div>
+        </a>
+        
+        <a href="/kso/">
+        <div class="product-card">
+           <div class="products-img">
+           <img src="/kso/kso_mke_075.png" alt="КСО «МКЭ» схема 75">
+           <img src="/kso/kso_mke_101.png" alt="КСО «МКЭ» схема 101">
+           <img src="/kso/kso_mke_201.png" alt="КСО «МКЭ» схема 201">
+           </div>
+          <div class="product-title">КСО «МКЭ»</div>
+          <div class="product-desc">Камеры сборные одностороннего обслуживания напряжением 6(10) кВ с автогазовой изоляцией и коммутационной аппаратурой с элегазовой изоляцией.</div>
+        </div>
+        </a>
+        
+        <a href="/ktp/">
+          <div class="product-card">
+          <div class="products-img">
+          </div>
+          <div class="product-title">КТП «МКЭ»</div>
+          <div class="product-desc">Подстанции комплектные трансформаторные мощностью 63–16000 кВА, напряжением на стороне ВН 6–35 кВ в оболочке из бетона, металла и сэндвич-панелей.</div>
+          </div>
+        </a>
+        
+        <a href="/nku/">
+          <div class="product-card">
+          <div class="products-img">
+          </div>
+          <div class="product-title">НКУ «МКЭ»</div>
+          <div class="product-desc">Устройства комплектные низковольтные распределения и управления напряжением до 1000 В, стационарного и выдвижного исполнения.</div>
+          </div>
+        </a>
+        
+        <div class="product-card">
+          <div class="badge-icon">🧠</div>
+          <div class="product-title">Проектирование</div>
+          <div class="product-desc">Тесное сотрудничество с проектными организациями позволяет нашей компании найти гибкое решение задачи любой сложности.</div>
+        </div>
+        
+        <div class="product-card">
+          <div class="badge-icon">🤝</div>
+          <div class="product-title">Монтаж</div>
+          <div class="product-desc">Производим шеф-монтажные и пусконаладочные работы любой сложности.</div>
+        </div>
+      
+        <div class="product-card">
+          <div class="badge-icon">🤝</div>
+          <div class="badge-icon">🔌</div>
+          <div class="badge-icon">⚡</div>
+          <div class="badge-icon">📡</div>
+          <div class="badge-icon">🏭</div>
+          <div class="product-title">Наладка</div>
+          <div class="product-desc">ЭФИ и ПНР любой сложности, в том числе терминалов релейной защиты и систем БАВР.</div>
+        </div>
+        
+        <div class="product-card">
+          <div class="badge-icon">🤝</div>
+          <div class="product-title">Сервис</div>
+          <div class="product-desc">Гарантийное и постгарантийное обслуживание всего комплекса производимого и поставляемого оборудования.</div>
+        </div>
+      
+      </div>
+
+      <div class="highlight-block">
+        <p><strong>⚙️ Инжиниринговое преимущество</strong> — каждый проект сопровождается детальной проработкой, использованием сертифицированных компонентов и строгим контролем качества. Обеспечиваем снижение эксплуатационных затрат и полную интеграцию с цифровыми системами мониторинга.</p>
+        <p style="margin-top: 0.8rem;">🔹 Гарантийное и постгарантийное обслуживание, шеф-монтаж, пусконаладка — комплексный подход под ключ для объектов от 0,4 до 35 кВ.</p>
+      </div>       
+
+        <div class="social-icons">
+        <h2>Следите за нами в социальных сетях:</h2>
+        </div>
+        
+  socialIcons:
+    - name: github
+      title: Посмотреть исходный код на GitHub
+      url: "https://github.com/"
+    - name: YouTube
+      title: Присоединиться к нашему каналу на YouTube
+      url: "https://youtube.com"
+#    - name: Discord
+#      title: Присоединиться к сообществу в Discord
+#      url: "https://discord.gg/ahpmTvhVmp"
+    - name: X
+      title: Поделиться PaperMod в X/Twitter
+      url: "https://x.com/"
+    - name: LinkedIn
+      title: Присоединяйтесь к нам в LinkedIn
+      url: "https://linkedin.com/"
+    - name: telegram
+      title: Присоединяйтесь к нам в Telegram
+      url: "https://#"
+
+  editPost:
+    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    Text: "Предложить изменения"
+    appendFilePath: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true

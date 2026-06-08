@@ -1,0 +1,346 @@
+/* Шрифт сайта fira code */
+
+body {
+    font-family: calibri, fira code, Monaco, Consolas, ubuntu mono, verdana, monospace;
+}
+
+/* Перенос строк меню */
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Высота меню */
+
+:root {
+    --header-height: 45px;
+}
+
+/* Базовые стили спойлера */
+
+/* Размер заголовка h1 статьи */
+.post-title, .post-content h1 {
+    font-size: 1.5rem;       /* 40px / 16px = 2.5rem; (1rem = 16px) */
+}
+
+/* Размер заголовка h1 страницы */
+.page-header h1 {
+    font-size: 2rem;
+}
+
+/* Размер заголовка h2*/
+.post-content h2 {
+    font-size: 1.5rem;
+}
+
+/* Размер заголовка h3*/
+.post-content h3 {
+    font-size: 1.2rem;
+}
+
+.spoiler {
+    border: 1px solid var(--border, #e1e4e8);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.highlight {
+    margin: 0 !important;
+    border-radius: 0 0 var(--radius) var(--radius) !important;
+}
+
+.spoiler summary {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    color: var(--primary, #24292e);
+    background: var(--code-bg, #f6f8fa);
+    border-radius: var(--radius) var(--radius) 0 0;
+    list-style: none;
+    transition: background 0.2s ease;
+    position: relative; /* Для позиционирования стрелки */
+    display: flex;
+    justify-content: space-between; /* Размещает текст слева, стрелку справа */
+    align-items: center;
+}
+
+.spoiler summary::-webkit-details-marker {
+    display: none; /* Убирает стандартную стрелку в WebKit */
+}
+
+.spoiler summary:hover {
+    background: var(--entry, #e1e4e8);
+}
+
+/* Стрелка */
+.spoiler summary::after {
+    content: '\25BC'; /* Unicode для стрелки вниз (▼) */
+    font-size: 0.8rem;
+    color: var(--primary, #24292e);
+    transition: transform 0.2s ease;
+}
+
+/* Поворот стрелки при открытии спойлера */
+.spoiler[open] summary::after {
+    transform: rotate(180deg); /* Стрелка вверх при открытии */
+}
+
+.spoiler-content {
+    padding: 1rem;
+    background: var(--background, #fff);
+    border-top: 1px solid var(--border, #e1e4e8);
+}
+
+/* Оформление кнопок клавиатуры */
+
+kbd {
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.1em 0.6em;
+
+    font-family: system-ui, sans-serif;
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: #3b3b3b;
+    text-shadow: 0 1px 0 #fff;
+
+    background-color: #e0e0e0;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 0 #fff;
+
+    white-space: nowrap;
+}
+
+/* Реальный размер entry-cover (обложка) */
+
+.entry-cover img {
+    border-radius: var(--radius);
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+/* Выравнивание картинок по центру статьи */
+
+.post-content img {
+    border-radius: 4px;
+    /* margin: 1rem 0; */
+    margin: 0 auto;
+}
+
+/* немного правим навигацию */
+.nav {
+    max-width: none;
+}
+
+.lang-switch li, .lang-switch ul, .logo-switches {
+    padding-left: 10px;
+}
+
+
+
+/* =========================================
+   Кастомные стили для главной страницы
+   (PaperMod, совместимость со светлой/тёмной темой)
+   ========================================= */
+
+/* Расширение ширины контента до 90% с ограничением */
+body .main {
+    max-width: 1400px;   /* чтобы на широких экранах строка не была слишком длинной */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    body .main {
+        width: 92%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Блок с логотипом */
+.home-info .theme-logo {
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+.home-info {
+    height: auto;
+}
+
+.entry-header {
+    margin: 0 auto;
+}
+
+/* Гибкий контейнер для текста и картинки */
+.home-info .custom-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.home-info .hero-text {
+    flex: 1.4;
+}
+
+.home-info .hero-image {
+    flex: 0.8;
+    text-align: center;
+}
+
+.home-info .hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Сетка продуктов */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 2rem;
+}
+
+.product-card {
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid var(--border);
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.product-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--primary);
+    text-align: center;
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--secondary);
+    text-align: justify;
+}
+
+.badge-icon {
+    font-size: 1.8rem;
+}
+
+.products-img {
+    display: flex;
+    flex-wrap: nowrap;       /* не переносить на новую строку */
+    gap: 0.75rem;           /* расстояние между изображениями */
+    width: 100%;            /* занимаем всю ширину карточки */
+    justify-content: space-between;
+    height: 150px;
+}
+
+/* Сами изображения – одинаковой ширины и подстраиваются под родителя */
+.products-img img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;           /* позволяем сжиматься при необходимости */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;    /* картинка впишется без искажений */
+}
+
+/* На маленьких экранах можно оставить в строку, но уменьшить отступ */
+@media (max-width: 500px) {
+    .products-img {
+        gap: 0.5rem;
+    }
+}
+
+/* Выделенный блок */
+.highlight-block {
+    background: var(--entry);
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0 1rem;
+    border-radius: var(--radius);
+}
+
+/* Адаптивность */
+@media (max-width: 720px) {
+    .home-info .custom-hero {
+        flex-direction: column;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Логотип — светлая тема (по умолчанию) */
+.logo-dark {
+    display: block;
+}
+.logo-light {
+    display: none;
+}
+
+/* Логотип — тёмная тема (новая логика PaperMod) */
+html[data-theme="dark"] .logo-dark {
+    display: none;
+}
+html[data-theme="dark"] .logo-light {
+    display: block;
+}
+
+
+/* Социальные иконки на главной */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a svg {
+    height: 2.5rem;
+    width: auto;
+    color: #ff0011;    
+}
+
+/* Применяем эффект инверсии к изображениям, когда на body есть класс .dark */
+
+/* Для всех картинок в постах */
+/* html[data-theme="dark"] .post-content img {
+    filter: invert(100%);
+} */
+
+/* Или только для PNG-файлов */
+html[data-theme="dark"] .post-content img[src$=".png"] {
+    filter: invert(100%);
+}
+
+html[data-theme="dark"] .products-img img[src$=".png"] {
+    filter: invert(100%);
+}
+
+/* Центрирование подписи под картинками */
+.post-content figure>figcaption {
+    text-align: center;
+}
