@@ -235,6 +235,9 @@ params:
         <a href="/nku/">
           <div class="product-card">
           <div class="products-img">
+          <img src="/nku/nku_mke_900.png" alt="НКУ «МКЭ» схема 75">
+          <img src="/nku/nku_mke_1200.png" alt="КСО «МКЭ» схема 75">
+          <img src="/nku/nku_mke_600.png" alt="КСО «МКЭ» схема 75">
           </div>
           <div class="product-title">НКУ «МКЭ»</div>
           <div class="product-desc">Устройства комплектные низковольтные распределения и управления напряжением до 1000 В, стационарного и выдвижного исполнения.</div>
@@ -248,17 +251,13 @@ params:
         </div>
         
         <div class="product-card">
-          <div class="badge-icon">🤝</div>
+          <div class="badge-icon">🔌</div>
           <div class="product-title">Монтаж</div>
           <div class="product-desc">Производим шеф-монтажные и пусконаладочные работы любой сложности.</div>
         </div>
       
         <div class="product-card">
-          <div class="badge-icon">🤝</div>
-          <div class="badge-icon">🔌</div>
           <div class="badge-icon">⚡</div>
-          <div class="badge-icon">📡</div>
-          <div class="badge-icon">🏭</div>
           <div class="product-title">Наладка</div>
           <div class="product-desc">ЭФИ и ПНР любой сложности, в том числе терминалов релейной защиты и систем БАВР.</div>
         </div>
