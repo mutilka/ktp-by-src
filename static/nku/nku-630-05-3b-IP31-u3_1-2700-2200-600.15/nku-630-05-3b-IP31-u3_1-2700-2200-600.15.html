@@ -22,7 +22,31 @@
         var folderName = "nku-630-05-3b-IP31-u3_1-2700-2200-600.15";
         var viewPortWidth = 800;
         var viewPortHeight = 600;
-        var backgroundColor = "#FFFFFF";
+        
+                // === Определение темы ===
+        let isDark = false;
+
+        try {
+            // Приоритет 1: Параметр из URL
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('theme')) {
+                isDark = urlParams.get('theme') === 'dark';
+            } 
+            // Приоритет 2: Тема родительской страницы
+            else {
+                const parentTheme = window.parent.document.documentElement.getAttribute('data-theme');
+                isDark = (parentTheme === 'dark');
+            }
+        } catch (e) {
+            // Приоритет 3: Системная тема
+            isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        var backgroundColor = isDark ? "#1d1e20" : "transparent";
+            
+         // var backgroundColor = "transparent";
+        
+        // var backgroundColor = "#FFFFFF";
         var uCount = 18;
         var vCount = 1;
         var uWrap = true;

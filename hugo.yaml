@@ -60,15 +60,15 @@ languages:
         - name: О нас
           url: about
           weight: 50
-        - name: Поиск
-          url: search/
-          weight: 60
+#        - name: Поиск
+#          url: search/
+#          weight: 60
         - name: Теги
           url: tags/
           weight: 70
-        - name: Архив
-          url: archives
-          weight: 80
+#        - name: Архив
+#          url: archives
+#          weight: 80
     params:
       languageAltTitle: Русский
       profileMode:
@@ -100,24 +100,24 @@ languages:
       series: series
     menu:
       main:
-        - name: CAD's
-          url: cad
-          weight: 5  
-        - name: Posts
-          url: posts
-          weight: 5  
-        - name: Tools
-          url: tools
-          weight: 5
-        - name: Energy
-          url: energy
-          weight: 5
-        - name: Archive
-          url: archives
-          weight: 10
-        - name: Search
-          url: search/
-          weight: 15
+#        - name: CAD's
+#          url: cad
+#          weight: 5  
+#        - name: Posts
+#          url: posts
+#          weight: 5  
+#        - name: Tools
+#          url: tools
+#          weight: 5
+#        - name: Energy
+#          url: energy
+#          weight: 5
+#        - name: Archive
+#          url: archives
+#          weight: 10
+#        - name: Search
+#          url: search/
+#          weight: 15
         - name: Tags
           url: tags/
           weight: 20
@@ -158,6 +158,7 @@ params:
   author: Theme PaperMod
   defaultTheme: auto
   ShowShareButtons: true
+  ShareButtons: ["linkedin", "twitter", "telegram", "whatsapp"] # To customize which share buttons to be enabled on page
   ShowReadingTime: true
   displayFullLangName: true
   ShowPostNavLinks: true

@@ -1,3 +1,9 @@
+/* Размер шрифта подписи картинок */
+
+.post-content figure>figcaption>p {
+    font-size: 1rem;
+}
+
 /* Шрифт сайта fira code */
 
 body {

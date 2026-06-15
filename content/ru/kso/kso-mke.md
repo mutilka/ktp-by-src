@@ -113,7 +113,7 @@ editPost:
 
 ### 3D вид камер КСО «МКЭ» (схемы 001 ... 028)
 
-<div style="max-width: 800px; max-height: 600px;">
+<div style="max-width: 800px; max-height: 600px; margin: 0 auto;">
   <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 75%; overflow: hidden;">
   <img style = "backgroud-color: transparent">
     <iframe src="/kso/kso-10-630-20-011.9/kso-10-630-20-011.9.html"

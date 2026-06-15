@@ -81,7 +81,7 @@ editPost:
 
 ## 3D вид линейки типовых устройств НКУ «МКЭ»
 
-<div style="max-width: 800px; max-height: 600px;">
+<div style="max-width: 800px; max-height: 600px; margin: 0 auto;">
   <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 75%; overflow: hidden;">
   <img style = "backgroud-color: transparent">
     <iframe src="/nku/nku-630-05-3b-IP31-u3_1-2700-2200-600.15/nku-630-05-3b-IP31-u3_1-2700-2200-600.15.html"
