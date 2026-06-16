@@ -1,0 +1,14 @@
+﻿{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" | default $alt }}
+
+<img 
+  src="{{ $src }}" 
+  alt="{{ $alt }}" 
+  loading="lazy"
+  data-full="{{ $src }}"
+  data-caption="{{ $caption }}"
+>
+{{ if $caption }}
+  <p class="caption">{{ $caption | markdownify }}</p>
+{{ end }}
