@@ -13,7 +13,7 @@ permalinks:
   KTP: /:sections/:slug/
   NKU: /:sections/:slug/
 #  blog: /blog/:slug/
-  about: /about/:slug/
+# about: /about/:slug/
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -57,9 +57,9 @@ languages:
 #        - name: Блог
 #          url: blog
 #          weight: 25
-        - name: О нас
-          url: about
-          weight: 50
+#        - name: О нас
+#          url: about
+#          weight: 50
 #        - name: Поиск
 #          url: search/
 #          weight: 60
@@ -183,7 +183,7 @@ params:
       - name: Теги
         url: tags
   homeInfoParams:
-    Title: "Вас приветствует наша компания:"
+    Title: ""
     Content: >
       <div class="theme-logo">
         <img class="logo-dark" src="/mke-logo-brw-o.svg" alt="Логотип (чёрный)">
@@ -193,7 +193,7 @@ params:
       <div class="custom-hero">
         <div class="hero-text">
           <p style="font-weight: 500; font-size: 1.1rem;">
-            🏭 Входящая в группу компаний <strong>ООО «МонолитКомфорт Энерго»</strong> предлагает услуги по проектированию, конструкторской разработке, монтажу, пусконаладочным работам и постгарантийному обслуживанию оборудования для энергетической отрасли:
+            🏭 Входящая в группу компаний <strong>ООО «МонолитКомфорт Энерго»</strong> предлагает услуги по проектированию, конструкторской разработке, монтажу, пусконаладочным работам и постгарантийному обслуживанию оборудования для энергетической отрасли
           </p>
         </div>
         <div class="hero-image">
@@ -275,9 +275,11 @@ params:
       </div>
 
       <div class="highlight-block">
-        <p><strong>⚙️ Инжиниринговое преимущество</strong> — каждый проект сопровождается детальной проработкой, использованием сертифицированных компонентов и строгим контролем качества. Обеспечиваем снижение эксплуатационных затрат и полную интеграцию с цифровыми системами мониторинга.</p>
-        <p style="margin-top: 0.8rem;">🔹 Гарантийное и постгарантийное обслуживание, шеф-монтаж, пусконаладка — комплексный подход под ключ для объектов от 0,4 до 35 кВ.</p>
-      </div>       
+        <p style="margin-top: 0.8rem;">Главный инженер – Чернопятов Дмитрий</p>
+        <p style="margin-top: 0.8rem;">+375 (29) 148-56-43</p>
+        <p style="margin-top: 0.8rem;">Начальник конструкторско отдела – Гражевский Евгений</p>
+        <p style="margin-top: 0.8rem;"> +375 (29) 339-88-76</p>
+       </div>       
 
         <div class="social-icons">
         <h2>Следите за нами в социальных сетях:</h2>
