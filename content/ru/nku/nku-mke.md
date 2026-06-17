@@ -30,8 +30,8 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
   image: "/nku/img/0_13-800-logo-cover.png" # путь к обложке поста
-  alt: "Альбом типовых решений шкаф ввода" # alt text
-  caption: "Альбом типовых решений шкаф ввода" # display caption under cover
+  alt: "Альбом типовых решений шкаф ввода НКУ «МКЭ»" # alt text
+  caption: "Альбом типовых решений шкаф ввода НКУ «МКЭ»" # display caption under cover
   relative: true # when using page bundles set this to true
   hidden: false # only hide on current single page
 editPost:

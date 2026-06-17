@@ -1,7 +1,7 @@
 ---
-title: "Подстанции комплектные трансформаторные КТП «МКЭ»"
-description: "Типовые решения для подстанции комплектные трансформаторные КТП «МКЭ» согласно ТУ BY 693307094.002-2025"
-slug: ktp-mke
+title: "Устройства комплектные распределительный КРУ «МКЭ»"
+description: "Типовые решения для устройств комплектных распределительных КРУ «МКЭ» согласно ТУ BY 693307094.004-2026"
+slug: kru-mke
 summary: "Типовые решения для КТП «МКЭ». Принципиальные электрические схемы (Э6). Перечень элементов (ПЭ3). Габаритные и установочные размеры. 3-D модели"
 date: 2026-06-08T14:00:00+03:00
 lastmod: 2026-06-08T14:00:02+02:00
@@ -107,7 +107,7 @@ editPost:
 <div style="max-width: 800px; max-height: 600px; margin: 0 auto;">
   <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 75%; overflow: hidden;">
   <img style = "backgroud-color: transparent">
-    <iframe src="/ktp/1ktp-m-100-10-0_4-kk-u1.9/1ktp-m-100-10-0_4-kk-u1.9.html"
+    <iframe src="/kru/kru-650-tn.3/kru-650-tn.3.html"
                  allowfullscreen
                  style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
                  frameborder="0"

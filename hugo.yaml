@@ -227,6 +227,8 @@ params:
         <a href="/ktp/">
           <div class="product-card">
           <div class="products-img">
+          <img src="/ktp/1ktp-m.png" alt="КТП «МКЭ» в металлической оболочке">
+          <img src="/ktp/2ktp-b.png" alt="КТП «МКЭ» в бетонной оболочке">
           </div>
           <div class="product-title">КТП «МКЭ»</div>
           <div class="product-desc">Подстанции комплектные трансформаторные мощностью 63–16000 кВА, напряжением на стороне ВН 6–35 кВ в оболочке из бетона, металла и сэндвич-панелей.</div>
