@@ -274,8 +274,9 @@ params:
       
       </div>
 
+        
       <div class="highlight-block">
-        <p style="margin-top: 1.2rem;">Контактная информация:</p>
+        <p style="font-size: larger; font-weight: bold;">Контактная информация:</p>
         <p style="margin-top: 0.8rem;">Главный инженер – Чернопятов Дмитрий Александрович</p>
         <p style="margin-top: 0.8rem;">+375 (29) 148-56-43, info@ktp.by</p>
         <p style="margin-top: 0.8rem;">Начальник конструкторско отдела – Гражевский Евгений Викторович</p>

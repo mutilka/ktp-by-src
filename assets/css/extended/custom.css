@@ -1,6 +1,15 @@
+/* ====================== СВЕЧЕНИЕ КАРТОЧКИ МАТЕРИАЛА ====================== */
+
+.post-entry {
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
 .post-entry:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    box-shadow: 
+        0 0 50px rgba(216, 44, 43, 0.25),
+        0 8px 30px rgba(216, 44, 43, 0.15);
 }
 
 /* ====================== ЛАЙТБОКС ====================== */
@@ -362,7 +371,7 @@ body .main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
-    margin: 2rem 0 2rem;
+    margin:  0 2rem 0 2rem;
 }
 
 .product-card {
@@ -376,7 +385,11 @@ body .main {
 
 .product-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    box-shadow: 
+    0 0 50px rgba(216, 44, 43, 0.25),
+    0 8px 30px rgba(216, 44, 43, 0.15);
+    /* transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1); */
 }
 
 .product-title {
