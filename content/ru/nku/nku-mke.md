@@ -29,7 +29,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-  image: "/nku/img/0_13-800-logo-cover.png" # путь к обложке поста
+  image: "/nku/img/0_13-600-logo-cover.png" # путь к обложке поста
   alt: "Альбом типовых решений шкаф ввода НКУ «МКЭ»" # alt text
   caption: "Альбом типовых решений шкаф ввода НКУ «МКЭ»" # display caption under cover
   relative: true # when using page bundles set this to true
