@@ -12,8 +12,8 @@ permalinks:
   KSO: /:sections/:slug/
   KTP: /:sections/:slug/
   NKU: /:sections/:slug/
+#  about: /about/:slug/
 #  blog: /blog/:slug/
-# about: /about/:slug/
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -54,18 +54,18 @@ languages:
         - name: НКУ
           url: nku
           weight: 40  
-#        - name: Блог
-#          url: blog
-#          weight: 25
-#        - name: О нас
-#          url: about
-#          weight: 50
-#        - name: Поиск
-#          url: search/
-#          weight: 60
+        - name: О компании
+          pageRef : /about
+          weight: 50
         - name: Теги
           url: tags/
           weight: 70
+#        - name: Блог
+#          url: blog
+#          weight: 25
+#        - name: Поиск
+#          url: search/
+#          weight: 60
 #        - name: Архив
 #          url: archives
 #          weight: 80
