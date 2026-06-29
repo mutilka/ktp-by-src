@@ -12,6 +12,7 @@ permalinks:
   KSO: /:sections/:slug/
   KTP: /:sections/:slug/
   NKU: /:sections/:slug/
+  METAL: /:sections/:slug/
 #  about: /about/:slug/
 #  blog: /blog/:slug/
 
@@ -22,7 +23,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["kru", "kso", "ktp", "nku", "about"]
+mainsections: ["kru", "kso", "ktp", "nku", "metal", "about"]
 
 minify:
   disableXML: true
@@ -54,9 +55,12 @@ languages:
         - name: НКУ
           url: nku
           weight: 40  
+        - name: Металлоконструкции
+          url: metal
+          weight: 50
         - name: О компании
           pageRef : /about
-          weight: 50
+          weight: 60
         - name: Теги
           url: tags/
           weight: 70
