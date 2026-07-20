@@ -1,3 +1,31 @@
+/* Кликабельные строки таблицы */
+.table-clickable tbody tr {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.table-clickable tbody tr:hover {
+  background-color: #f0f5ff;
+}
+
+/* Первый столбец — ссылка не подчёркивается, цвет как у текста */
+.table-clickable tbody tr td:first-child a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Последний столбец — без переноса (nowrap) */
+.table-clickable tbody tr td:last-child {
+  white-space: nowrap;
+}
+
+/* Для мобильных — можно разрешить перенос */
+@media (max-width: 768px) {
+  .table-clickable tbody tr td:last-child {
+    white-space: normal;
+  }
+}
+
 /* Базовые переменные для светлой темы */
 html {
     --table-bg: #ffffff;
