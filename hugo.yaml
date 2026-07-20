@@ -5,7 +5,7 @@ defaultContentLanguageInSubdir: false
 title: ООО «МКЭ» – Главная
 copyright: "© [ООО «МонолитКомфорт Энерго»](https://ktp.by/)"
 theme: ["PaperMod"]
-publishDir: ../ktp-by-prod/public
+publishDir: ../ktp-by-prod
 
 permalinks:
   KRU: /:sections/:slug/
