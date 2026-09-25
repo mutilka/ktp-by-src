@@ -13,8 +13,9 @@ if errorlevel 1 (
 )
 
 echo === git commit ===
-for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set DT=%%i
-git commit -m "update %DT%"
+REM for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set DT=%%i
+REM git commit -m "update %DT%"
+git commit
 if errorlevel 1 (
     echo Нечего коммитить — пропускаем.
 )
@@ -56,8 +57,9 @@ if errorlevel 1 (
 )
 
 echo === git commit ===
-for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set DT=%%i
-git commit -m "update %DT%"
+REM for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set DT=%%i
+REM git commit -m "update %DT%"
+git commit
 if errorlevel 1 (
     echo Нечего коммитить — пропускаем.
 )
