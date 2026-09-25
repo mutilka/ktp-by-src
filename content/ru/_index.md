@@ -6,7 +6,7 @@ summary: "Рады, очень рады!"
 date: 2025-08-07T00:00:01+03:00
 lastmod: 2025-08-07T00:00:02+03:00
 draft: false
-tags: ["hello world", "настройка"]
+# tags: ["hello world", "настройка"]
 categories: ["Hello World"]
 series: ["Настройка программ"]
 # weight: 1
