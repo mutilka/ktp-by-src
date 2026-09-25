@@ -4,9 +4,6 @@ cd /d "%~dp0"
 
 REM === ktp-by-src ===
 
-echo === del "D:\ktp-by-src\.git\index.lock" ===
-del "D:\ktp-by-src\.git\index.lock"
-
 echo === git add . ===
 git add .
 if errorlevel 1 (
@@ -19,9 +16,7 @@ echo === git commit ===
 for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set DT=%%i
 git commit -m "update %DT%"
 if errorlevel 1 (
-    echo Ошибка git commit!
-    pause
-    exit /b 1
+    echo Нечего коммитить — пропускаем.
 )
 
 echo === git push ===
@@ -52,9 +47,6 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo === del "D:\ktp-by-prod\.git\index.lock" ===
-del "D:\ktp-by-prod\.git\index.lock"
-
 echo === git add . ===
 git add .
 if errorlevel 1 (
@@ -67,9 +59,7 @@ echo === git commit ===
 for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set DT=%%i
 git commit -m "update %DT%"
 if errorlevel 1 (
-    echo Ошибка git commit!
-    pause
-    exit /b 1
+    echo Нечего коммитить — пропускаем.
 )
 
 echo === git push ===
