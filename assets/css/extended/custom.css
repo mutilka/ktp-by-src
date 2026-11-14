@@ -53,8 +53,8 @@ html[data-theme="dark"] {
 
 /* Стилизация таблицы */
 table {
-    width: fit-content;
-    /* width: 100%; */
+    /* width: fit-content; */
+    width: 100%;
     border-collapse: collapse;
     background-color: var(--table-bg);
     color: var(--table-text);
