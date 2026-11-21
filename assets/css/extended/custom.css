@@ -55,6 +55,7 @@ html[data-theme="dark"] {
 table {
     width: fit-content;
     /* width: 100%; */
+    overflow-x: auto; /* Включает скролл */
     border-collapse: collapse;
     background-color: var(--table-bg);
     color: var(--table-text);
