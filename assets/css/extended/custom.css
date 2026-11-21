@@ -61,7 +61,7 @@ table {
     background-color: var(--table-bg);
     color: var(--table-text);
     margin: 20px 0;
-    font-size: 16px;
+    font-size: clamp(12px, 2.5vw, 16px);
     font-family: sans-serif;
     box-shadow: var(--shadow);
     transition: background-color 0.3s, color 0.3s;
