@@ -53,32 +53,43 @@ html[data-theme="dark"] {
 
 /* Стилизация таблицы */
 table {
-    width: fit-content;
-    /* width: 100%; */
-    overflow-x: auto; /* Включает скролл */
+    /* 1. ОБЯЗАТЕЛЬНО: делаем таблицу блочным элементом, чтобы заработал скролл */
+    display: block; 
+    
+    /* 2. Занимает всю доступную ширину, но не больше */
+    width: 100%;
+    max-width: 100%;
+    
+    /* 3. Включаем горизонтальный скролл */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    
     border-collapse: collapse;
     background-color: var(--table-bg);
     color: var(--table-text);
     margin: 20px 0;
-    font-size: 16px;
+    
+    /* 4. МАГИЯ АДАПТИВНОГО ШРИФТА (от 12px на телефоне до 16px на ПК) */
+    font-size: clamp(12px, 2.5vw, 16px); 
+    
     font-family: sans-serif;
     box-shadow: var(--shadow);
     transition: background-color 0.3s, color 0.3s;
 }
 
-thead tr {
-    background-color: var(--header-bg);
-    color: var(--header-text);
-    text-align: left;
+/* Фикс для внутренней структуры таблицы, чтобы она не ломалась при display: block */
+table thead, 
+table tbody, 
+table tr {
+    width: 100%;
 }
 
 /* Увеличили левый отступ до 24px, чтобы текст не прилипал к краю */
 th, td {
     padding: 12px 15px 12px 24px; 
-}
-
-tbody tr {
-    border-bottom: 1px solid var(--row-border);
+    
+    /* 5. Запрещаем перенос текста в ячейках, чтобы таблица прокручивалась, а не сжималась в кашу */
+    white-space: nowrap; 
 }
 
 /* Чередование строк (зебра) */
@@ -94,7 +105,19 @@ tbody tr:last-of-type {
 /* Эффект наведения */
 tbody tr:hover {
     background-color: var(--hover-bg);
-    /*cursor: pointer;*/
+}
+
+/* Разрешаем перенос ТОЛЬКО для последней колонки (как было у вас) */
+.table-clickable tbody tr td:last-child {
+  white-space: normal;
+  min-width: 200px; /* Чтобы текст не превращался в узкую колонку */
+}
+
+/* На мобильных уменьшаем отступы, чтобы влезло больше данных */
+@media (max-width: 768px) {
+  th, td {
+    padding: 8px 10px; 
+  }
 }
 
 /* ====================== ЯНДЕКС ИНФОРМЕР ====================== */
